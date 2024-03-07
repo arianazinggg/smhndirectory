@@ -33,6 +33,6 @@ css = """
 st.markdown(css, unsafe_allow_html=True)
     
     # Tiles
-    st.write('<div class="tile">Reserving of Venues<br>This is the content of Tile 1</div>', unsafe_allow_html=True)
-    st.write('<div class="tile">Making Letters<br>This is the content of Tile 2</div>', unsafe_allow_html=True)
-    st.write('<div class="tile">School Admin<br>This is the content of Tile 3</div>', unsafe_allow_html=True)
+st.write('<div class="tile">Reserving of Venues<br>This is the content of Tile 1</div>', unsafe_allow_html=True)
+st.write('<div class="tile">Making Letters<br>This is the content of Tile 2</div>', unsafe_allow_html=True)
+st.write('<div class="tile">School Admin<br>This is the content of Tile 3</div>', unsafe_allow_html=True)
