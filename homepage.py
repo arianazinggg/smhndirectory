@@ -19,7 +19,7 @@ st.download_button(
 
     
     # CSS for styling the tiles
-    css = """
+css = """
     <style>
     .tile {
         background-color: #f4f4f4;
