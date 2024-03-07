@@ -30,7 +30,7 @@ css = """
     }
     </style>
     """
-    st.markdown(css, unsafe_allow_html=True)
+st.markdown(css, unsafe_allow_html=True)
     
     # Tiles
     st.write('<div class="tile">Reserving of Venues<br>This is the content of Tile 1</div>', unsafe_allow_html=True)
