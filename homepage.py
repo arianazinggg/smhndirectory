@@ -16,3 +16,23 @@ st.download_button(
         mime="application/pdf",
         key='download-pdf'
     )
+
+    
+    # CSS for styling the tiles
+    css = """
+    <style>
+    .tile {
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+    
+    # Tiles
+    st.write('<div class="tile">Reserving of Venues<br>This is the content of Tile 1</div>', unsafe_allow_html=True)
+    st.write('<div class="tile">Making Letters<br>This is the content of Tile 2</div>', unsafe_allow_html=True)
+    st.write('<div class="tile">School Admin<br>This is the content of Tile 3</div>', unsafe_allow_html=True)
