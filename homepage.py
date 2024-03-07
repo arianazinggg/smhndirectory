@@ -8,10 +8,11 @@ st.set_page_config(page_title="SAMAHAN Directory",
 
 st.title("SAMAHAN Directory")
 
+pdf = open("SMHN GUIDEBOOK FOR STUDENT ACTIVITIES.pdf", "rb").read()
 st.download_button(
-        "Download SMHN Directory",
-        pdf,
-        "SMHN GUIDEBOOK FOR STUDENT ACTIVITIES.pdf",
-        "text/pdf",
+        label="Download SMHN Directory",
+        data=pdf,
+        file_name="SMHN GUIDEBOOK FOR STUDENT ACTIVITIES.pdf",
+        mime="application/pdf",
         key='download-pdf'
-        )
+    )
