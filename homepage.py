@@ -17,7 +17,7 @@ st.download_button(
         key='download-pdf'
     )
 
-page = st.sidebar.radio("Go to", ["Home", "Page 1", "Page 2"])
+tab1, tab2= st.tabs(["Homepage","Contact Us" ])
 
     
     # CSS for styling the tiles
