@@ -7,3 +7,11 @@ st.set_page_config(page_title="SAMAHAN Directory",
 )
 
 st.title("SAMAHAN Directory")
+
+ st.download_button(
+        "Download SMHN Directory",
+        csv,
+        "SMHN GUIDEBOOK FOR STUDENT ACTIVITIES.pdf",
+        "text/pdf",
+        key='download-pdf'
+        )
