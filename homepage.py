@@ -38,3 +38,15 @@ st.markdown(css, unsafe_allow_html=True)
 st.write('<div class="tile">Reserving of Venues<br>This is the content of Tile 1</div>', unsafe_allow_html=True)
 st.write('<div class="tile">Making Letters<br>This is the content of Tile 2</div>', unsafe_allow_html=True)
 st.write('<div class="tile">School Admin<br>This is the content of Tile 3</div>', unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+
+    # Place elements in the first column
+with col1:
+        st.write("This is inside the first column.")
+        st.write("You can put multiple elements inside a column.")
+
+    # Place elements in the second column
+with col2:
+        st.write("This is inside the second column.")
+        st.write("You can put multiple elements inside a column.")
