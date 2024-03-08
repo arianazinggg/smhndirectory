@@ -47,5 +47,17 @@ def main():
 def navigate_to_page(page_function):
     page_function()
 
+def reservation_of_venues():
+    
+
+def school_administration():
+    
+
+def letter_templates():
+    
+
+def ateneo_map():
+    
+
 if __name__ == "__main__":
     main()
