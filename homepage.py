@@ -49,8 +49,14 @@ st.write("Directly go to the Office of the Student Affairs located at Mezzanine 
 with tab3:
     st.header('📝Letter Templates')
 
+
 with tab4:
     st.header('🕴️School Administration')
+
+    st.markdown(
+    '<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Center Administration</div>',
+    unsafe_allow_html=True
+)
 
 with tab5:
     st.header('🗺️Ateneo Map')
