@@ -27,12 +27,14 @@ with tab2:
     st.header('📆Reservation of Venues')
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;">STEP 1</div>', unsafe_allow_html=True)
 
+st.markdown("""
     Submit the Concept Paper to the Office of the Student Affairs
 
-    Google Form Link: st.markdown("[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform)")
+    Google Form Link: 
+""")
+    st.markdown("[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform)")
+
     
-
-
 with tab3:
     st.header('📝Letter Templates')
 
