@@ -30,4 +30,4 @@ tile_data = [
 for i, (name, color) in enumerate(tile_data):
         col = row1[i] if i < 2 else row2[i-2]
         with col:
-            st.markdown(f'<div style="background-color: {color}; height: 120px; padding: 20px; margin: 10px; text-align: center;">{name}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="background-color: {color}; height: 120px; padding: 20px; margin: 10px; text-align: center; font-family: Montserrat, sans-serif; font-weight: bold; font-size: 20px;">{name}</div>', unsafe_allow_html=True)
