@@ -37,18 +37,30 @@ def main():
         with col:
             # Wrap the tile content in an anchor tag to make it clickable
             if st.markdown(
-                f'<a href="#" style="text-decoration: none;">'
+                f'<a href="/{name}" style="text-decoration: none;">'
                 f'<div style="background-color: {color}; height: 150px; padding: 20px; margin: 10px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; border-radius: 10px;">'
                 f'{name}'
                 f'</div>'
                 f'</a>', 
                 unsafe_allow_html=True
-            ):
-                navigate_to_page(name)
+            )
 
-def navigate_to_page(name):
-    st.title(f"You clicked {name}")
-    st.write("This is the content of the new page.")
+            
+def reservation_of_venues():
+    st.title("Reservation of Venues Page")
+    st.write("This is the content of the Reservation of Venues page.")
+
+def school_administration():
+    st.title("School Administration Page")
+    st.write("This is the content of the School Administration page.")
+
+def letter_templates():
+    st.title("Letter Templates Page")
+    st.write("This is the content of the Letter Templates page.")
+
+def ateneo_map():
+    st.title("Ateneo Map Page")
+    st.write("This is the content of the Ateneo Map page.")
 
 if __name__ == "__main__":
     main()
