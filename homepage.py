@@ -42,6 +42,7 @@ st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10p
 
 st.write("<i>Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.</i>", unsafe_allow_html=True)
 
+st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 14px;color: white; background-color: #F9E897;margin-top: 8px;">Arrupe Hall</div>', unsafe_allow_html=True)
 
 
 with tab3:
