@@ -38,7 +38,8 @@ for i, (name, color) in enumerate(tile_data):
                 f'</a>', 
                 unsafe_allow_html=True
             ):
+                navigate_to_page(name)
     
-def navigate_to_page(name, color):
+def navigate_to_page(name):
     st.title(f"You clicked {name}")
-    st.write(f"The color of the tile is {color}.")
+    st.write("This is the content of the new page.")
