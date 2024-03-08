@@ -25,7 +25,7 @@ with tab1:
 
 with tab2:
     st.header('📆Reservation of Venues')
-    st.markdown('<div style="display: inline-block;border: 3px solid blue; padding: 5px; font-size: 6px;"><h2>STEP 1</h2></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block;border: 3px solid blue; padding: 5px;border-radius: 10px;text-align: center; font-family: Montserrat; font-size: 8px;">STEP 1</div>', unsafe_allow_html=True)
 
 
 with tab3:
