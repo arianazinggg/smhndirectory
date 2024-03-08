@@ -39,11 +39,11 @@ st.markdown("[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIp
 
 st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;">STEP 2</div>', unsafe_allow_html=True)
 
-"""
-    Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.
 
-    
-"""
+st.write("""<i> Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.</i>", unsafe_allow_html=True""")
+   
+
+
 with tab3:
     st.header('📝Letter Templates')
 
