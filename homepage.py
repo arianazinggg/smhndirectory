@@ -46,7 +46,7 @@ def main():
 
 def navigate_to_page(page_name):
     st.sidebar.title("Navigation")
-    selected_page = st.sidebar("Go to", ["Home", "Reservation of Venues", "School Administration", "Letter Templates", "Ateneo Map"])
+    selected_page = st.sidebar.button("Go to", ["Home", "Reservation of Venues", "School Administration", "Letter Templates", "Ateneo Map"])
     
     if selected_page == "Home":
         st.title("Welcome to the Homepage")
