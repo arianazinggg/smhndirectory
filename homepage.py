@@ -49,7 +49,8 @@ elif selected_tab == "School Administration":
     st.header('🕴️ School Administration')
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Center Administration</div>', unsafe_allow_html=True)
     # Add your content for School Administration here
-    st.write("** Fr. Karel S. San Juan, S.J. **" "<p><i> University President</i></p>")
+    st.markdown("**Fr. Karel S. San Juan, S.J.** <p><i>University President</i></p>", unsafe_allow_html=True)
+
 
 elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
