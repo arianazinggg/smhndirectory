@@ -30,8 +30,14 @@ tile_data = [
 for i, (name, color) in enumerate(tile_data):
     col = row1[i] if i < 2 else row2[i-2]
     with col:
-        if st.markdown(f'<a href="#" style="text-decoration: none;"><div style="background-color: {color}; height: 150px; padding: 20px; margin: 10px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; border-radius: 10px;">{name}</div></a>', unsafe_allow_html=True)
-            navigate_to_page(name)
+        if st.markdown(
+                f'<a href="#" style="text-decoration: none;">'
+                f'<div style="background-color: {color}; height: 150px; padding: 20px; margin: 10px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; border-radius: 10px;">'
+                f'{name}'
+                f'</div>'
+                f'</a>', 
+                unsafe_allow_html=True
+            ):
     
 def navigate_to_page(name, color):
     st.title(f"You clicked {name}")
