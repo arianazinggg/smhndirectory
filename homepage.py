@@ -52,6 +52,10 @@ elif selected_tab == "School Administration":
     st.markdown("**Fr. Karel S. San Juan, S.J.** <i>University President</i>", unsafe_allow_html=True)
     st.markdown("**Mr. Jeremy S. Eliab** <i>Executive Vice President</i>", unsafe_allow_html=True)
     st.markdown("**Mr. Romulo Vinci R. Bueza** <i>Executive Assistant to the President/Director, Ateneo Internationalization for Mindanao (AIM) Office</i>", unsafe_allow_html=True) 
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Office of the Academic Vice President</div>', unsafe_allow_html=True)
+    st.markdown("**Ms. Gina L. Montalan, Ph.D.** <i>Academic Vice President (AVP)</i>", unsafe_allow_html=True)
+    st.markdown("**Ms. Tracy B. Villanueva** <i>Director, Admission and Aid Office</i>", unsafe_allow_html=True)
+    st.markdown("**Atty. Edgar B. Pascua II** <i>Registrar for Tertiary Education</i>", unsafe_allow_html=True)
 
 elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
