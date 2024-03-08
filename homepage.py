@@ -25,6 +25,8 @@ with tab1:
 
 with tab2:
     st.header('📆Reservation of Venues')
+    st.markdown('<div style="border: 1px solid blue; padding: 10px"><h2>Step 1</h2></div>', unsafe_allow_html=True)
+
 
 with tab3:
     st.header('📝Letter Templates')
