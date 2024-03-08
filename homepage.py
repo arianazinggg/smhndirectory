@@ -17,16 +17,19 @@ st.download_button(
         key='download-pdf'
     )
 
-tab1, tab2, tab3, tab4= st.tabs(["🏠Home","📆Reservation of Venues", "🕴️School Administration", "🗺️Ateneo Map" ])
+tab1, tab2, tab3, tab4, tab5= st.tabs(["🏠Home Page","📆Reservation of Venues", "📝Letter Templates", "🕴️School Administration", "🗺️Ateneo Map"])
 
-st.markdown(
-    """
-    <style>
-        /* Set the width of each tab to 25% */
-        .streamlit-tabs > div[role="tablist"] > div[role="tab"] {
-            width: 50%;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+with tab1:
+    st.header('🏠Home Page')
+
+with tab2:
+    st.header('📆Reservation of Venues')
+
+with tab3:
+    st.header('📝Letter Templates')
+
+with tab4:
+    st.header('🕴️School Administration')
+
+with tab5:
+    st.header('🗺️Ateneo Map')
