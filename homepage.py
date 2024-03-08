@@ -16,7 +16,15 @@ st.download_button(
         mime="application/pdf",
         key='download-pdf'
     )
+def main():
 
+    tile_data = [
+        ("Reservation of Venues", "#ff9999", reservation_of_venues),
+        ("School Administration", "#99ff99", school_administration),
+        ("Letter Templates", "#9999ff", letter_templates),
+        ("Ateneo Map", "#ffff99", ateneo_map)
+    ]
+    
 for i, (name, color, page_function) in enumerate(tile_data):
         col = row1[i] if i < 2 else row2[i-2]
         with col:
