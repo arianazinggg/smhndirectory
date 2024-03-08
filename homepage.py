@@ -29,8 +29,11 @@ with tab2:
 
 st.markdown("""
     Submit the Concept Paper to the Office of the Student Affairs
+    HOW? Fill up the Google Form using the Organization's Email. You will be given a receipt of your submission shortly. 
 
-    Google Form Link: 
+    You may send your follow-ups and concerns to the OSA Program Coordinator, Mr. Benz Edd Garay <beagaray@addu.edu.ph>.
+
+    You may access the Google Form Link below: 
 """)
 st.markdown("[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform)")
 
