@@ -17,6 +17,7 @@ st.download_button(
         key='download-pdf'
     )
 
+def main():
 row1 = st.columns(2)
 row2 = st.columns(2)
 
@@ -43,3 +44,6 @@ for i, (name, color) in enumerate(tile_data):
 def navigate_to_page(name):
     st.title(f"You clicked {name}")
     st.write("This is the content of the new page.")
+
+if __name__ == "__main__":
+    main()
