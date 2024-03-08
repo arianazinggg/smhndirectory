@@ -29,5 +29,5 @@ tile_data = [
 
 for i, (name, color) in enumerate(tile_data):
         col = row1[i] if i < 2 else row2[i-2]
-        tile = col.container(height=120, style={"background-color": color})
-        tile.title(name)
+        with col:
+            st.markdown(f'<div style="background-color: {color}; height: 120px; padding: 20px;">{name}</div>', unsafe_allow_html=True)
