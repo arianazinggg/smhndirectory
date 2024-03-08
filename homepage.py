@@ -21,7 +21,7 @@ st.download_button(
 tab1, tab2, tab3, tab4, tab5= st.tabs(["🏠Home Page","📆Reservation of Venues", "📝Letter Templates", "🕴️School Administration", "🗺️Ateneo Map"])
 
 with tab1:
-    st.markdown('<iframe src="https://samahan.addu.edu.ph" width="1500" height="600"></iframe>', unsafe_allow_html=True)
+    st.markdown('<iframe src="https://samahan.addu.edu.ph" width="1300" height="400"></iframe>', unsafe_allow_html=True)
 
 with tab2:
     st.header('📆Reservation of Venues')
