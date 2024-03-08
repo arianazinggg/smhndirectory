@@ -23,7 +23,7 @@ tab1, tab2, tab3, tab4, tab5= st.tabs(["🏠Home Page","📆Reservation of Venue
 with tab1:
     st.header('🏠Home Page')
     st.markdown("## Website Overview")
-    st.components.iframe("samahan.addu.edu.ph", width=1000, height=600)
+    st.components.iframe("https://samahan.addu.edu.ph", width=1000, height=600)
 
 with tab2:
     st.header('📆Reservation of Venues')
