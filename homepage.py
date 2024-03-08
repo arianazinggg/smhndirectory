@@ -18,20 +18,25 @@ st.download_button(
     )
 
 def main():
-row1 = st.columns(2)
-row2 = st.columns(2)
 
-tile_data = [
+    # Define tile names and colors
+    tile_data = [
         ("Reservation of Venues", "#ff9999"),
         ("School Administration", "#99ff99"),
         ("Letter Templates", "#9999ff"),
         ("Ateneo Map", "#ffff99")
     ]
 
-for i, (name, color) in enumerate(tile_data):
-    col = row1[i] if i < 2 else row2[i-2]
-    with col:
-        if st.markdown(
+    # Create two rows with two columns each
+    row1 = st.columns(2)
+    row2 = st.columns(2)
+
+    # Loop through columns and create clickable tiles with names and colors
+    for i, (name, color) in enumerate(tile_data):
+        col = row1[i] if i < 2 else row2[i-2]
+        with col:
+            # Wrap the tile content in an anchor tag to make it clickable
+            if st.markdown(
                 f'<a href="#" style="text-decoration: none;">'
                 f'<div style="background-color: {color}; height: 150px; padding: 20px; margin: 10px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; border-radius: 10px;">'
                 f'{name}'
@@ -40,7 +45,7 @@ for i, (name, color) in enumerate(tile_data):
                 unsafe_allow_html=True
             ):
                 navigate_to_page(name)
-    
+
 def navigate_to_page(name):
     st.title(f"You clicked {name}")
     st.write("This is the content of the new page.")
