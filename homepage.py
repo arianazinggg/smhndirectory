@@ -36,16 +36,19 @@ def main():
         col = row1[i] if i < 2 else row2[i-2]
         with col:
             # Wrap the tile content in an anchor tag to make it clickable
-            if st.markdown(
+            st.markdown(
                 f'<a href="/{name}" style="text-decoration: none;">'
                 f'<div style="background-color: {color}; height: 150px; padding: 20px; margin: 10px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; border-radius: 10px;">'
                 f'{name}'
                 f'</div>'
                 f'</a>', 
                 unsafe_allow_html=True
-            )
+            ):
+                navigate_to_page(page_function)
 
-            
+def navigate_to_page(page_function):
+    page_function()
+
 def reservation_of_venues():
     st.title("Reservation of Venues Page")
     st.write("This is the content of the Reservation of Venues page.")
