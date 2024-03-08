@@ -34,6 +34,6 @@ for i, (name, color) in enumerate(tile_data):
 with col:
     if st.button(name):
             navigate_to_page(name)
-    def navigate_to_page(Reservation_of_Venues):
+    def navigate_to_page(name, color):
         st.title(f"{Reservation_of_Venues}")
         st.write("This is the content of the new page.")
