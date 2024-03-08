@@ -24,7 +24,7 @@ st.markdown(
     <style>
         /* Set the width of each tab to 25% */
         .streamlit-tabs > div[role="tablist"] > div[role="tab"] {
-            width: 25%;
+            width: 50%;
         }
     </style>
     """,
