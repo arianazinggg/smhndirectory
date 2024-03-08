@@ -17,9 +17,17 @@ st.download_button(
         key='download-pdf'
     )
 
-row1 = st.columns(3)
-row2 = st.columns(3)
+row1 = st.columns(2)
+row2 = st.columns(2)
 
-for col in row1 + row2:
-    tile = col.container(height=120)
-    tile.title(":book:")
+    tile_data = [
+        ("Reservation of Venues", "#ff9999"),
+        ("School Administration", "#99ff99"),
+        ("Letter Templates", "#9999ff"),
+        ("Ateneo Map", "#ffff99")
+    ]
+
+    for i, (name, color) in enumerate(tile_data):
+        col = row1[i] if i < 2 else row2[i-2]
+        tile = col.container(height=120, style={"background-color": color})
+        tile.title(name)
