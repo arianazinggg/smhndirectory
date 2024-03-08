@@ -18,3 +18,15 @@ st.download_button(
     )
 
 tab1, tab2, tab3, tab4= st.tabs(["🏠Home","📆Reservation of Venues", "🕴️School Administration", "🗺️Ateneo Map" ])
+
+st.markdown(
+    """
+    <style>
+        /* Set the width of each tab to 25% */
+        .streamlit-tabs > div[role="tablist"] > div[role="tab"] {
+            width: 25%;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
