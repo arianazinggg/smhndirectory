@@ -27,6 +27,13 @@ with tab2:
     st.header('📆Reservation of Venues')
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;">STEP 1</div>', unsafe_allow_html=True)
 
+    """
+    Submit a Concept Paper
+
+    st.markdown('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform" width="1300" height="300"></iframe>', unsafe_allow_html=True)
+
+    """
+
 
 with tab3:
     st.header('📝Letter Templates')
