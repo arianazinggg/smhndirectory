@@ -20,14 +20,14 @@ st.download_button(
 row1 = st.columns(2)
 row2 = st.columns(2)
 
-    tile_data = [
+tile_data = [
         ("Reservation of Venues", "#ff9999"),
         ("School Administration", "#99ff99"),
         ("Letter Templates", "#9999ff"),
         ("Ateneo Map", "#ffff99")
     ]
 
-    for i, (name, color) in enumerate(tile_data):
+for i, (name, color) in enumerate(tile_data):
         col = row1[i] if i < 2 else row2[i-2]
         tile = col.container(height=120, style={"background-color": color})
         tile.title(name)
