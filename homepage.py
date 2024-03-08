@@ -19,10 +19,10 @@ st.download_button(
 def main():
 
     tile_data = [
-        ("Reservation of Venues", "#ff9999", reservation_of_venues),
-        ("School Administration", "#99ff99", school_administration),
-        ("Letter Templates", "#9999ff", letter_templates),
-        ("Ateneo Map", "#ffff99", ateneo_map)
+        ("Reservation of Venues", "#ff9999", "reservation_of_venues"),
+        ("School Administration", "#99ff99", "school_administration"),
+        ("Letter Templates", "#9999ff", "letter_templates"),
+        ("Ateneo Map", "#ffff99", "ateneo_map")
     ]
 
     # Create two rows with two columns each
@@ -30,22 +30,34 @@ def main():
     row2 = st.columns(2)
 
     # Loop through tile data and create clickable tiles with names and colors
-    for i, (name, color, page_function) in enumerate(tile_data):
+    for i, (name, color, page_name) in enumerate(tile_data):
         col = row1[i] if i < 2 else row2[i-2]
         with col:
             # Wrap the tile content in an anchor tag to make it clickable
             if st.markdown(
-                f'<a href="/{name}" style="text-decoration: none;">'
+                f'<a href="/{page_name}" style="text-decoration: none;">'
                 f'<div style="background-color: {color}; height: 150px; padding: 20px; margin: 10px; text-align: center; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; border-radius: 10px;">'
                 f'{name}'
                 f'</div>'
                 f'</a>', 
                 unsafe_allow_html=True
             ):
-                navigate_to_page(page_function)
+                navigate_to_page(page_name)
 
-def navigate_to_page(page_function):
-    page_function()
+def navigate_to_page(page_name):
+    st.sidebar.title("Navigation")
+    selected_page = st.sidebar.radio("Go to", ["Home", "Reservation of Venues", "School Administration", "Letter Templates", "Ateneo Map"])
+    
+    if selected_page == "Home":
+        st.title("Welcome to the Homepage")
+    elif selected_page == "Reservation of Venues":
+        reservation_of_venues()
+    elif selected_page == "School Administration":
+        school_administration()
+    elif selected_page == "Letter Templates":
+        letter_templates()
+    elif selected_page == "Ateneo Map":
+        ateneo_map()
 
 def reservation_of_venues():
     st.title("Reservation of Venues Page")
