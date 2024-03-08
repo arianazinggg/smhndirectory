@@ -44,6 +44,7 @@ st.write("<i>Note: These venues are available on a first-come and first-serve ba
 
 st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Arrupe Hall, Ground Floor Martin Hall</i></div>', unsafe_allow_html=True)
 
+st.write("Directly go to the Office of the Student Affairs located at Mezzanine Floor, Martin Hall. Ask for a <i>Reservation Form</i> where you will fill up the necessary information in the form. Also, there will be signatories needed for the reservation. Proceed to the Ecoteneo Office located at 5th Floor, Martin to get a <i>Environmental Resource Management Plan</i>, fill up the needed details and get it signed by the Ecoteneo Director ", unsafe_allow_html=True)
 
 with tab3:
     st.header('📝Letter Templates')
