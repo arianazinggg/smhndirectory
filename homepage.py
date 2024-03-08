@@ -17,4 +17,4 @@ st.download_button(
         key='download-pdf'
     )
 
-tab1, tab2= st.tabs(["🏠Home","📆Reservation of Venues", "🕴️School Administration", "🗺️Ateneo Map" ])
+tab1, tab2, tab3, tab4= st.tabs(["🏠Home","📆Reservation of Venues", "🕴️School Administration", "🗺️Ateneo Map" ])
