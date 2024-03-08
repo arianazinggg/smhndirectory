@@ -47,21 +47,5 @@ def main():
 def navigate_to_page(page_function):
     page_function()
 
-def reservation_of_venues():
-    st.title("Reservation of Venues Page")
-    st.write("This is the content of the Reservation of Venues page.")
-
-def school_administration():
-    st.title("School Administration Page")
-    st.write("This is the content of the School Administration page.")
-
-def letter_templates():
-    st.title("Letter Templates Page")
-    st.write("This is the content of the Letter Templates page.")
-
-def ateneo_map():
-    st.title("Ateneo Map Page")
-    st.write("This is the content of the Ateneo Map page.")
-
 if __name__ == "__main__":
     main()
