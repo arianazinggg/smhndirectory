@@ -50,7 +50,8 @@ elif selected_tab == "School Administration":
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Center Administration</div>', unsafe_allow_html=True)
     # Add your content for School Administration here
     st.markdown("**Fr. Karel S. San Juan, S.J.** <i>University President</i>", unsafe_allow_html=True)
-
+    st.markdown("**Mr. Jeremy S. Eliab** <i>Executive Vice President</i>", unsafe_allow_html=True)
+    st.markdown("**Mr. Romulo Vinci R. Bueza** <i>Executive Assistant to the President/Director, Ateneo Internationalization for Mindanao (AIM) Office</i>", unsafe_allow_html=True) 
 
 elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
