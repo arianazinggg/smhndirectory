@@ -21,7 +21,7 @@ st.download_button(
 
 # Define the tabs
 tabs = ["Home", "Reservation of Venues", "Letter Templates", "School Administration", "Ateneo Map"]
-selected_tab = st.selectbox("Select a tab:", range(len(tab_names)), format_func=lambda x: tab_names[x])
+selected_tab_index = st.selectbox("Select a tab:", range(len(tab_names)), format_func=lambda x: tab_names[x])
 
 # Display content based on the selected tab
 if selected_tab == "Home":
