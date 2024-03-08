@@ -19,10 +19,10 @@ st.download_button(
 def main():
 
     tile_data = [
-        ("Reservation of Venues", "#ff9999", "reservation_of_venues"),
-        ("School Administration", "#99ff99", "school_administration"),
-        ("Letter Templates", "#9999ff", "letter_templates"),
-        ("Ateneo Map", "#ffff99", "ateneo_map")
+        ("Reservation of Venues", "#ff9999", "/reservation"),
+        ("School Administration", "#99ff99", "/administration"),
+        ("Letter Templates", "#9999ff", "/templates"),
+        ("Ateneo Map", "#ffff99", "/map")
     ]
 
     # Create two rows with two columns each
@@ -42,38 +42,7 @@ def main():
                 f'</a>', 
                 unsafe_allow_html=True
             ):
-                navigate_to_page(page_name)
 
-def navigate_to_page(page_name):
-    st.sidebar.title("Navigation")
-    selected_page = st.sidebar.button("Go to", ["Home", "Reservation of Venues", "School Administration", "Letter Templates", "Ateneo Map"])
-    
-    if selected_page == "Home":
-        st.title("Welcome to the Homepage")
-    elif selected_page == "Reservation of Venues":
-        reservation_of_venues()
-    elif selected_page == "School Administration":
-        school_administration()
-    elif selected_page == "Letter Templates":
-        letter_templates()
-    elif selected_page == "Ateneo Map":
-        ateneo_map()
-
-def reservation_of_venues():
-    st.title("Reservation of Venues Page")
-    st.write("This is the content of the Reservation of Venues page.")
-
-def school_administration():
-    st.title("School Administration Page")
-    st.write("This is the content of the School Administration page.")
-
-def letter_templates():
-    st.title("Letter Templates Page")
-    st.write("This is the content of the Letter Templates page.")
-
-def ateneo_map():
-    st.title("Ateneo Map Page")
-    st.write("This is the content of the Ateneo Map page.")
 
 if __name__ == "__main__":
     main()
