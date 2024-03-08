@@ -35,5 +35,5 @@ with col:
     if st.button(name):
             navigate_to_page(name)
     def navigate_to_page(name, color):
-        st.title(f"{Reservation_of_Venues}")
-        st.write("This is the content of the new page.")
+        st.title(f"You clicked {name}")
+        st.write(f"The color of the tile is {color}.")
