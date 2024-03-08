@@ -16,3 +16,5 @@ st.download_button(
         mime="application/pdf",
         key='download-pdf'
     )
+
+tab1, tab2= st.tabs(["🏠Home","📆Reservation of Venues", "🕴️School Administration", "🗺️Ateneo Map" ])
