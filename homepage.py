@@ -24,8 +24,13 @@ def main():
         ("Letter Templates", "#9999ff", letter_templates),
         ("Ateneo Map", "#ffff99", ateneo_map)
     ]
-    
-for i, (name, color, page_function) in enumerate(tile_data):
+
+    # Create two rows with two columns each
+    row1 = st.columns(2)
+    row2 = st.columns(2)
+
+    # Loop through tile data and create clickable tiles with names and colors
+    for i, (name, color, page_function) in enumerate(tile_data):
         col = row1[i] if i < 2 else row2[i-2]
         with col:
             # Wrap the tile content in an anchor tag to make it clickable
