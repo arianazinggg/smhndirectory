@@ -27,14 +27,9 @@ with tab2:
     st.header('📆Reservation of Venues')
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;">STEP 1</div>', unsafe_allow_html=True)
 
-    st.markdown("""
-    Submit a Concept Paper
+    Submit the Concept Paper to the Office of the Student Affairs
 
-    Below is the overview of Concept Paper Google Form:
-""")
-
-    st.markdown('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform" width="1300" height="300"></iframe>', unsafe_allow_html=True)
-
+    Google Form Link: st.markdown("[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform)")
     
 
 
