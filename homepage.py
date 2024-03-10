@@ -47,11 +47,42 @@ elif selected_tab == "Letter Templates":
     # Add your content for Letter Templates here
 elif selected_tab == "School Administration":
     st.header('🕴️ School Administration')
+    from streamlit_searchbar import streamlit_searchbar
+
+    value = streamlit_searchbar()
+
+    st.write(value)
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Center Administration</div>', unsafe_allow_html=True)
     # Add your content for School Administration here
     st.markdown("<br> **:blue[Fr. Karel S. San Juan, S.J.]** <br> <i>University President</i>", unsafe_allow_html=True)
-    st.markdown("**:blue[Mr. Jeremy S. Eliab]** <br> <i>Executive Vice President</i>", unsafe_allow_html=True)
-    st.markdown("**:blue[Mr. Romulo Vinci R. Bueza]** <br> <i>Executive Assistant to the President/Director, Ateneo Internationalization for Mindanao (AIM) Office</i> ", unsafe_allow_html=True) 
+    st.markdown("<br>**:blue[Mr. Jeremy S. Eliab]** <br> <i>Executive Vice President</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Romulo Vinci R. Bueza]** <br> <i>Executive Assistant to the President<br> Director, Ateneo Internationalization for Mindanao (AIM) Office</i> ", unsafe_allow_html=True) 
+    st.markdown("<br>**:blue[Ms. Fatima Jennae B. Jereza]** <br> <i>Assistant Director, Ateneo Internationalization for Mindanao (AIM) Office</i> ", unsafe_allow_html=True) 
+    st.markdown("<br>**:blue[Atty. Romeo T. Cabarde, JR.]** <br> <i>Assistant to the President for Advocacy & Legal Affairs</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Lilibeth L. Arcena]** <br> <i>Assistant to the President for Advancement</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Shiela Joy C. Gallemaso-Bacon, CPA]** <br> <i>Internal Auditor</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Suzette D. Aliño]** <br> <i>Vice President for Quality Assurance and Planning</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Suzanne Marie A. Doromal]** <br> <i>Assistant to the President for Community Center and Martin Hall Operations</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Bernie M. Jereza]** <br> <i>Assistant to the President for Information Technology<br> Director, Institutional Communications and Promotions (iCOMMP) Office</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Gian Carlo C. Tancontian]** <br> <i>Deputy Director, Institutional Communications and Promotions (iCOMMP) Office</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Jimmy E. Delgado, CPA]** <br> <i>Vice President for Finance and Treasurer</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Atty. Niceforo V. Solis]** <br> <i>Director, Human Resource Management and Development Office</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Rev. Fr. Carlos G. Cenzon, Jr., S.J., Ph.D.]** <br> <i>Director, University IT Office (UITO)</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Bernie M. Jereza]** <br> <i>Director, Management Information Systems Office – UITO</i>", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Ruben F. Estuart, Jr. ]** <br> <i>Director, Technical Services – UITO", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Jose Mari V. Freires ]** <br> <i>Quality Assurance and Cybersecurity Officer – UITO", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Carmela Marie M. Santos]** <br> <i>Director, Ecoteneo", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Alfredo Teodoro]** <br> <i>Director, Ateneo Academy", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Hannah Grace Cang]** <br> <i>OIC Director, Ateneo de Davao Academy of Lifelong Learning (ADD-ALL)", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Ozelle L. Rivamonte]** <br> <i>Manager, Purchasing Office", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Dr. Tender Grace P. Ferolin]** <br> <i>University Physical Plant Director", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Ms. Jhoan Mae A. Labog]** <br> <i>Food Court and Commercial Spaces Manager ", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Engr. Noah A. Bubod]** <br> <i>Physical Plant Supervisor – Matina Campus", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Engr. Eduvegio V. Ornopia]** <br> <i>Officer-in-Charge, Physical Plant Office, Bangkal campus", unsafe_allow_html=True)
+    st.markdown("<br>**:blue[Mr. Regin Ruis B. Oliveros]** <br> <i>Program Coordinator, Madaris Volunteer Program (MVP)", unsafe_allow_html=True)
+    
+
+    #OAVP
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Office of the Academic Vice President</div>', unsafe_allow_html=True)
     st.markdown("<br> **:blue[Ms. Gina L. Montalan, Ph.D.]** <br> <i>Academic Vice President (AVP)</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Ms. Tracy B. Villanueva]** <br> <i>Director, Admission and Aid Office</i>", unsafe_allow_html=True)
@@ -60,7 +91,14 @@ elif selected_tab == "School Administration":
     st.markdown("**:blue[Ms. Theresa Salaver-Eliab]** <br> <i>Director, Director, Office of Student Affairs</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Atty. Ira Calatrava-Valenzuela]** <br> <i>Assistant Director, Office of Student Affairs</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Ms. Leah C. Reparado]** <br> <i>Director, College Guidance and Testing Center</i>", unsafe_allow_html=True)
-
+    #SAS
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">School of Arts and Sciences</div>', unsafe_allow_html=True)
+    st.markdown("**:blue[Mr. Renante D. Pilapil, Ph.D.]** <br> <i>Dean</i>", unsafe_allow_html=True)
+    st.markdown("**:blue[Ms. Ma. Teresa Quindoy]** <br> <i>Assistant Dean, Computer Studies — SAS</i>", unsafe_allow_html=True)
+    st.markdown("**:blue[Mr. Jeremy Glenn A. Tuvida]** <br> <i>Assistant Dean, Humanities and Letters — SAS</i>", unsafe_allow_html=True)
+    st.markdown("**:blue[Ms. Agnes T. Aranas, Ph.D.]** <br> <i>Assistant Dean, Natural Sciences and Mathematics — SAS</i>", unsafe_allow_html=True)
+    st.markdown("**:blue[Ms. Nelly Z. Limbadan, Ph.D.]** <br> <i>Assistant Dean, Social Sciences — SAS</i>", unsafe_allow_html=True)
+    st.markdown("**:blue[Mr. Benedict V. Omblero, Ph.D.]** <br> <i>Director, Ateneo Language Center</i>", unsafe_allow_html=True)
 elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
     # Add your content for Ateneo Map here
