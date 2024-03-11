@@ -47,11 +47,7 @@ elif selected_tab == "Letter Templates":
     # Add your content for Letter Templates here
 elif selected_tab == "School Administration":
     st.header('🕴️ School Administration')
-    from streamlit_searchbar import streamlit_searchbar
-
-    value = streamlit_searchbar()
-
-    st.write(value)
+   
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 20px; color: white; background-color: #124076; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto;">Center Administration</div>', unsafe_allow_html=True)
     # Add your content for School Administration here
     st.markdown("<br> **:blue[Fr. Karel S. San Juan, S.J.]** <br> <i>University President</i>", unsafe_allow_html=True)
