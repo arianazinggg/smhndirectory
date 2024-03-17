@@ -27,6 +27,8 @@ selected_tab = st.selectbox("Select a tab:", tabs)
 if selected_tab == "Home":
     st.markdown('<iframe src="https://samahan.addu.edu.ph" width="1300" height="500"></iframe>', unsafe_allow_html=True)
 elif selected_tab == "Reservation of Venues":
+
+#STEP 1    
     st.header('📆 Reservation of Venues')
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px; margin-bottom: 8px;">STEP 1</div>', unsafe_allow_html=True)
     st.markdown("""
@@ -40,7 +42,8 @@ elif selected_tab == "Reservation of Venues":
     st.markdown("[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform)")
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;margin-bottom: 8px;">STEP 2</div>', unsafe_allow_html=True)
     st.write("<i>Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.</i>", unsafe_allow_html=True)
-    
+
+#STEP 2
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Arrupe Hall, Ground Floor Martin Hall</i></div>', unsafe_allow_html=True)
     
     #information
@@ -66,6 +69,15 @@ elif selected_tab == "Reservation of Venues":
     paragraph4 = "Proceed to the Physical Plant Office (PPO) located at the 1st Floor, Dotterweich (Law Building), request through the window and look for Ms. Carmen Celebrar (cscelebrar@addu.edu.ph). Inquire about the availability of the venues you want to reserve. Obtain a copy of the Reservation Form as soon as your event has been tentatively scheduled. Wait until Engr. Tender Grace Ferolin (tpferolin@addu.edu.ph), PPO Director, approves the reservation."
     st.write(f'<p style="text-align: justify;">{paragraph4}</p>', unsafe_allow_html=True)
 
+
+#STEP 3
+    st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px; margin-bottom: 8px;">STEP 3</div>', unsafe_allow_html=True)
+    ermap = "Process the ERMAP form at the ECOTENEO Office located at the 5th Floor, Martin Hall (right side of the stage). If you will serve snacks or meals during your event, make sure to secure the details of your food supplier, the materials used for its packaging, and your plans for disposal."
+    st.write(f'<p style="text-align: justify;">{ermap}</p>', unsafe_allow_html=True)
+
+#STEP 4
+    st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px; margin-bottom: 8px;">STEP 4</div>', unsafe_allow_html=True)
+    st.write("<i>Note: You may simultaneously process your request for equipment with your venue reservation to save time. Make sure to indicate all the equipment needed for your event (e.g. sound system, microphone, tables, chairs, platforms, etc.) For events with tables and chairs, don’t forget to attach a detailed floor plan of the venue in your letter. Be aware that such requests may necessitate a Job Order and may incur overtime fees (for university staff who work outside of normal hours), so remember to settle your payment with Finance afterward.</i>", unsafe_allow_html=True)
 
 
 elif selected_tab == "Letter Templates":
