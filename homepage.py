@@ -41,7 +41,7 @@ elif selected_tab == "Reservation of Venues":
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;margin-bottom: 8px;">STEP 2</div>', unsafe_allow_html=True)
     st.write("<i>Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.</i>", unsafe_allow_html=True)
     
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Arrupe Hall, Ground Floor Martin Hall</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Arrupe Hall, Ground Floor Martin Hall</i></div>', unsafe_allow_html=True)
     
     #information
 
@@ -49,20 +49,20 @@ elif selected_tab == "Reservation of Venues":
     st.write(f'<p style="text-align: justify;">{paragraph}</p>', unsafe_allow_html=True)
 
     
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>4th Floor, 6th Floor, or 7th Floor Martin Hall</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>4th Floor, 6th Floor, or 7th Floor Martin Hall</i></div>', unsafe_allow_html=True)
     paragraph1 = "Proceed to the Athletics Office located at the back of the 4th floor of Martin Hall, look for Ma’am Ivy Guadalquiver (icguadalquiver@addu.edu.ph) and inquire about the availability of the venue. Obtain a copy of the <i>Martin Hall Reservation Form</i> as soon as your event has been tentatively scheduled."
     st.write(f'<p style="text-align: justify;">{paragraph1}</p>', unsafe_allow_html=True)
 
 
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Conference Rooms, Ricci Hall 3rd Floor CCFC Building</i></div>', unsafe_allow_html=True) 
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Conference Rooms, Ricci Hall 3rd Floor CCFC Building</i></div>', unsafe_allow_html=True) 
     paragraph2 = "Proceed to the Ground floor of the Community Center of the First Companions (CCFC) Building and look for Ma’am Charlene Apayart (cmapayart@addu.edu.ph). Inquire about the availability of the conference rooms and obtain a copy of the <i>Ricci Hall Reservation Form</i> as soon as your event has been tentatively scheduled."
     st.write(f'<p style="text-align: justify;">{paragraph2}</p>', unsafe_allow_html=True)
 
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>UCEAC Media/Training Room, 8th Floor CCFC Building</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>UCEAC Media/Training Room, 8th Floor CCFC Building</i></div>', unsafe_allow_html=True)
     paragraph3 = "Send a Letter of Request to Mr. Mark Paul Samante (mposamante@addu.edu.ph), UCEAC Chairperson and you may also cc: UCEAC (uceac@addu.edu.ph), or proceed to the 8th floor of the CCFC Building UCEAC Office and inquire about the availability of the Media or Training Room. Obtain a copy of the Room Reservation Form as soon as your event has been tentatively scheduled."
     st.write(f'<p style="text-align: justify;">{paragraph3}</p>', unsafe_allow_html=True)
 
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Jubilee “J” Building Classrooms, Bapa Benny Tudtud Auditorium and Finster Auditorium 7th Floor Finster</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Jubilee “J” Building Classrooms, Bapa Benny Tudtud Auditorium and Finster Auditorium 7th Floor Finster</i></div>', unsafe_allow_html=True)
     paragraph4 = "Proceed to the Physical Plant Office (PPO) located at the 1st Floor, Dotterweich (Law Building), request through the window and look for Ms. Carmen Celebrar (cscelebrar@addu.edu.ph). Inquire about the availability of the venues you want to reserve. Obtain a copy of the Reservation Form as soon as your event has been tentatively scheduled. Wait until Engr. Tender Grace Ferolin (tpferolin@addu.edu.ph), PPO Director, approves the reservation."
     st.write(f'<p style="text-align: justify;">{paragraph4}</p>', unsafe_allow_html=True)
 
