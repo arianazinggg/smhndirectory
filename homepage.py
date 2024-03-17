@@ -20,7 +20,7 @@ st.download_button(
 
 
 # Define the tabs
-tabs = ["Home", "Reservation of Venues", "Letter Templates", "School Administration", "Ateneo Map"]
+tabs = ["Home", "Reservation of Venues", "Reservation Form Templates", "School Administration", "Ateneo Map"]
 selected_tab = st.selectbox("Select a tab:", tabs)
 
 # Display content based on the selected tab
@@ -41,19 +41,94 @@ elif selected_tab == "Reservation of Venues":
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;margin-bottom: 8px;">STEP 2</div>', unsafe_allow_html=True)
     st.write("<i>Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.</i>", unsafe_allow_html=True)
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Arrupe Hall, Ground Floor Martin Hall</i></div>', unsafe_allow_html=True)
-    st.write("Directly go to the Office of the Student Affairs located at Mezzanine Floor, Martin Hall. Ask for a <i>Reservation Form</i> where you will fill up the necessary information in the form. Also, there will be signatories needed for the reservation. When the reservation are already approved by OSA, proceed to the front desk of Community Center of the First Companions (CCFC), and wait for the approval of Ma'am Suzanne Marie Doromal, the Assistant to the President for Community Center Operations. </p>" , unsafe_allow_html=True)
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>4th Floor, 6th Floor, or 7th Floor Martin Hall</i></div>', unsafe_allow_html=True)
-    st.write("Proceed to the Athletics Office located at the back of the 4th floor of Martin Hall, look for Ma’am Ivy Guadalquiver (icguadalquiver@addu.edu.ph) and inquire about the availability of the venue. Obtain a copy of the <i>Martin Hall Reservation Form</i> as soon as your event has been tentatively scheduled.</p>" , unsafe_allow_html=True)
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Conference Rooms, Ricci Hall 3rd Floor CCFC Building</i></div>', unsafe_allow_html=True)
-    st.write("Proceed to the 9th floor of the Community Center of the First Companions (CCFC) Building and look for Ma’am Charlene Apayart (cmapayart@addu.edu.ph). Inquire about the availability of the conference rooms and obtain a copy of the <i>Ricci Hall Reservation Form</i> as soon as your event has been tentatively scheduled.</p>" , unsafe_allow_html=True)
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>UCEAC Media/Training Room, 8th Floor CCFC Building</i></div>', unsafe_allow_html=True)
-    st.write("Send a Letter of Request to Mr. Mark Paul Samante (mposamante@addu.edu.ph), UCEAC Chairperson and you may also cc: UCEAC (uceac@addu.edu.ph), or proceed to the 8th floor of the CCFC Building UCEAC Office and inquire about the availability of the Media or Training Room. Obtain a copy of the Room Reservation Form as soon as your event has been tentatively scheduled.</p>" , unsafe_allow_html=True)
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Jubilee “J” Building Classrooms or Bapa Benny Tudtud Auditorium</i></div>', unsafe_allow_html=True)
-    st.write("<Proceed to the Physical Plant Office (PPO) and look for Ms. Carmen Celebrar (cscelebrar@addu.edu.ph) inquire about the availability of the venues you want to reserve. Obtain a copy of the Reservation Form as soon as your event has been tentatively scheduled. Wait until Engr.Tender Grace Ferolin (tpferolin@addu.edu.ph), PPO Director approved the reservation./p>" , unsafe_allow_html=True)
+    st.write("Directly go to the Office of the Student Affairs located at Mezzanine Floor, Martin Hall. Ask for a <i>Reservation Form</i> where you will fill up the necessary information in the form. Also, there will be signatories needed for the reservation. Proceed to the Ecoteneo Office located at 5th Floor, Martin to get a <i>Environmental Resource Management Plan</i>, fill up the needed details and get it signed by the Ecoteneo Director. <p> When the two reservations are already approved by OSA & Ecoteneo, proceed to the front desk of Community Center of the First Companions (CCFC), and wait for the approval of Ma'am Suzanne Marie Doromal, the Assistant to the President for Community Center Operations. The reservation will take place in less than 2-3 days and they will contact you to receive the <i>Job Order</i> for it to be paid at the Finance Office.</p>", unsafe_allow_html=True)
+elif selected_tab == "Reservation Form Templates":
+    st.header('📝 Reservation Form Templates')
+    from streamlit_card import card
+    col1, col2, col3 = st.columns((1,1,1))
+    import base64
+    with open('pictures\martin_hall.jpg', "rb") as a:
+        data = a.read()
+        encoded = base64.b64encode(data)
+    martin = "data:image/png;base64," + encoded.decode("utf-8")
+    
+    with open(r'pictures\tudtud.jpg', "rb") as b:
+        tudtud_read = base64.b64encode(b.read())
+    tudtud = "data:image/png;base64," + tudtud_read.decode("utf-8")
+    
+    with open(r'pictures\arrupe.jpg', "rb") as c:
+        data = c.read()
+        encoded = base64.b64encode(data)
+    arrupe = "data:image/png;base64," + encoded.decode("utf-8")
 
+    with open(r'pictures\conference_room.jpg', "rb") as d:
+        data = d.read()
+        encoded = base64.b64encode(data)
+    conf_room = "data:image/png;base64," + encoded.decode("utf-8")
 
-elif selected_tab == "Letter Templates":
-    st.header('📝 Letter Templates')
+    with open(r'pictures\finaud.jpg', "rb") as e:
+        data = e.read()
+        encoded = base64.b64encode(data)
+    finaud = "data:image/png;base64," + encoded.decode("utf-8")
+
+    with open(r'pictures\hisflex.jpg', "rb") as f:
+        data = f.read()
+        encoded = base64.b64encode(data)
+    hisflex = "data:image/png;base64," + encoded.decode("utf-8")
+   
+   
+    with col1:
+        card(title="Martin Hall",
+        text="4th Flr, Martin Hall",
+        image=martin,
+        styles={
+            'card':{
+                "width":"105%"}},
+        url="https://samahan.addu.edu.ph/")
+        
+    
+        card(title="Bapa Benny Tudtud Auditorium",
+        text="Ateneo de Davao - Jacinto",
+        image=tudtud,
+        styles={
+            'card':{
+                "width":"105%"}},
+        url="https://samahan.addu.edu.ph/")
+
+    with col2: 
+        card(title="Arrupe Hall",
+        text="1st Flr, Martin Hall",
+        image=arrupe,
+        styles={
+            'card':{
+                "width":"105%"}},
+        url="https://github.com/gamcoh/st-cardhttps://samahan.addu.edu.ph/")
+
+        card(title="Hisflex Classrooms",
+        text="Ateneo de Davao - Jacinto",
+        image=hisflex,
+        styles={
+            'card':{
+                "width":"105%"}},
+        url="https://samahan.addu.edu.ph/")
+    
+    with col3: 
+        card(title="CCFC Conference Rooms",
+        text="3rd Flr, Ricci Hall",
+        image=conf_room,
+        styles={
+            'card':{
+                "width":"105%"}},
+        url="https://samahan.addu.edu.ph/")
+
+        card(title="Finster Auditorium",
+        text="7th Flr, Finster Building",
+        image=finaud,
+        styles={
+            'card':{"width":"105%"}},
+        url="https://samahan.addu.edu.ph/")
+    
+    
     # Add your content for Letter Templates here
 elif selected_tab == "School Administration":
     st.header('🕴️ School Administration')
