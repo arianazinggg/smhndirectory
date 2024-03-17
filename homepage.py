@@ -59,10 +59,12 @@ elif selected_tab == "Reservation of Venues":
     st.write(f'<p style="text-align: justify;">{paragraph2}</p>', unsafe_allow_html=True)
 
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>UCEAC Media/Training Room, 8th Floor CCFC Building</i></div>', unsafe_allow_html=True)
-    st.write("Send a Letter of Request to Mr. Mark Paul Samante (mposamante@addu.edu.ph), UCEAC Chairperson and you may also cc: UCEAC (uceac@addu.edu.ph), or proceed to the 8th floor of the CCFC Building UCEAC Office and inquire about the availability of the Media or Training Room. Obtain a copy of the Room Reservation Form as soon as your event has been tentatively scheduled.</p>" , unsafe_allow_html=True)
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Jubilee “J” Building Classrooms, Bapa Benny Tudtud Auditorium and Finster Auditorium 7th Floor Finster</i></div>', unsafe_allow_html=True)
-    st.write("Proceed to the Physical Plant Office (PPO) located at the 1st Floor, Dotterweich (Law Building), request throught the window and look for Ms. Carmen Celebrar (cscelebrar@addu.edu.ph) inquire about the availability of the venues you want to reserve. Obtain a copy of the Reservation Form as soon as your event has been tentatively scheduled. Wait until Engr.Tender Grace Ferolin (tpferolin@addu.edu.ph), PPO Director approved the reservation.</p>" , unsafe_allow_html=True)
+    paragraph3 = "Send a Letter of Request to Mr. Mark Paul Samante (mposamante@addu.edu.ph), UCEAC Chairperson and you may also cc: UCEAC (uceac@addu.edu.ph), or proceed to the 8th floor of the CCFC Building UCEAC Office and inquire about the availability of the Media or Training Room. Obtain a copy of the Room Reservation Form as soon as your event has been tentatively scheduled."
+    st.write(f'<p style="text-align: justify;">{paragraph3}</p>', unsafe_allow_html=True)
 
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Jubilee “J” Building Classrooms, Bapa Benny Tudtud Auditorium and Finster Auditorium 7th Floor Finster</i></div>', unsafe_allow_html=True)
+    paragraph4 = "Proceed to the Physical Plant Office (PPO) located at the 1st Floor, Dotterweich (Law Building), request through the window and look for Ms. Carmen Celebrar (cscelebrar@addu.edu.ph). Inquire about the availability of the venues you want to reserve. Obtain a copy of the Reservation Form as soon as your event has been tentatively scheduled. Wait until Engr. Tender Grace Ferolin (tpferolin@addu.edu.ph), PPO Director, approves the reservation."
+    st.write(f'<p style="text-align: justify;">{paragraph4}</p>', unsafe_allow_html=True)
 
 
 
