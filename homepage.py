@@ -41,7 +41,13 @@ elif selected_tab == "Reservation of Venues":
     st.markdown('<div style="display: inline-block; padding: 10px;border-radius: 10px;text-align: center; font-family: Helvetica; font-size: 20px;color: white; background-color: #124076;margin-top: 8px;margin-bottom: 8px;">STEP 2</div>', unsafe_allow_html=True)
     st.write("<i>Note: These venues are available on a first-come and first-serve basis. Make sure that you include all the necessary details in your letter of request together with your approved concept paper.</i>", unsafe_allow_html=True)
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>Arrupe Hall, Ground Floor Martin Hall</i></div>', unsafe_allow_html=True)
-    st.write("Directly go to the Office of the Student Affairs located at Mezzanine Floor, Martin Hall. Ask for a <i>Reservation Form</i> where you will fill up the necessary information in the form. Also, there will be signatories needed for the reservation. When the reservation are already approved by OSA, proceed to the front desk of Community Center of the First Companions (CCFC), and wait for the approval of Ma'am Suzanne Marie Doromal, the Assistant to the President for Community Center Operations. The reservation will take place in less than 2-3 days and they will contact you to receive the <i>Job Order</i> for it to be paid at the Finance Office.</p>" , unsafe_allow_html=True)
+    st.write("Directly go to the Office of the Student Affairs located at Mezzanine Floor, Martin Hall. Ask for a <i>Reservation Form</i> where you will fill up the necessary information in the form. Also, there will be signatories needed for the reservation. When the reservation are already approved by OSA, proceed to the front desk of Community Center of the First Companions (CCFC), and wait for the approval of Ma'am Suzanne Marie Doromal, the Assistant to the President for Community Center Operations. </p>" , unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #A87C7C; margin-top: 8px; margin-bottom: 8px;"><i>4th Floor, 6th Floor, or 7th Floor Martin Hall</i></div>', unsafe_allow_html=True)
+    st.write("Proceed to the Athletics Office located at the back of the 4th floor of Martin Hall, look for Ma’am Ivy Guadalquiver (icguadalquiver@addu.edu.ph) and inquire about the availability of the venue. Obtain a copy of the <i>Martin Hall Reservation Form</i> as soon as your event has been tentatively scheduled.</p>" , unsafe_allow_html=True)
+
+
+
+
 elif selected_tab == "Letter Templates":
     st.header('📝 Letter Templates')
     # Add your content for Letter Templates here
