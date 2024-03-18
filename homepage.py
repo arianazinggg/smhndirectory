@@ -20,13 +20,13 @@ st.download_button(
 
 
 # Define the tabs
-tabs = ["Home", "Requests & Reservations", "Letter Templates", "School Administration", "Ateneo Map"]
+tabs = ["Home", "Request & Reservations", "Letter Templates", "School Administration", "Ateneo Map"]
 selected_tab = st.selectbox("Select a tab:", tabs)
 
 # Display content based on the selected tab
 if selected_tab == "Home":
     st.markdown('<iframe src="https://samahan.addu.edu.ph" width="1300" height="500"></iframe>', unsafe_allow_html=True)
-elif selected_tab == "Requests & Reservations":
+elif selected_tab == "Request & Reservations":
 
 #STEP 1    
     st.header('📆 Requests & Reservation')
