@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import streamlit_card
+import streamlit_card as sc
 from streamlit_card import card
 
 
@@ -122,7 +122,7 @@ elif selected_tab == "Letter Templates":
    
    
     with col1:
-        card(title="Martin Hall",
+        sc.card(title="Martin Hall",
         text="4th Flr, Martin Hall",
         image=martin,
         styles={
@@ -131,7 +131,7 @@ elif selected_tab == "Letter Templates":
         url="https://samahan.addu.edu.ph/")
         
     
-        card(title="Bapa Benny Tudtud Auditorium",
+        sc.card(title="Bapa Benny Tudtud Auditorium",
         text="Ateneo de Davao - Jacinto",
         image=tudtud,
         styles={
