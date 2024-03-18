@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import card
+from streamlit_card import card
+
 
 st.set_page_config(page_title="SAMAHAN Directory", 
                     page_icon=":book:",
