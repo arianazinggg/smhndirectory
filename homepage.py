@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from streamlit_card import card
 
 st.set_page_config(page_title="SAMAHAN Directory", 
                     page_icon=":book:",
@@ -85,7 +86,7 @@ elif selected_tab == "Request & Reservations":
 
 elif selected_tab == "Letter Templates":
     st.header('📝 Letter Templates')
-    from streamlit_card import card
+
     col1, col2, col3 = st.columns((1,1,1))
     import base64
     with open('pictures\martin_hall.jpg', "rb") as a:
