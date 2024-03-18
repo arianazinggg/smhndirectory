@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit_card
 from streamlit_card import card
 
 
@@ -91,31 +90,31 @@ elif selected_tab == "Letter Templates":
 
     col1, col2, col3 = st.columns((1,1,1))
     import base64
-    with open('pictures\martin_hall.jpg', "rb") as a:
+    with open('pictures/martin_hall.jpg', "rb") as a:
         data = a.read()
         encoded = base64.b64encode(data)
     martin = "data:image/png;base64," + encoded.decode("utf-8")
     
-    with open(r'pictures\tudtud.jpg', "rb") as b:
+    with open(r'pictures/tudtud.jpg', "rb") as b:
         tudtud_read = base64.b64encode(b.read())
     tudtud = "data:image/png;base64," + tudtud_read.decode("utf-8")
     
-    with open(r'pictures\arrupe.jpg', "rb") as c:
+    with open(r'pictures/arrupe.jpg', "rb") as c:
         data = c.read()
         encoded = base64.b64encode(data)
     arrupe = "data:image/png;base64," + encoded.decode("utf-8")
 
-    with open(r'pictures\conference_room.jpg', "rb") as d:
+    with open(r'pictures/conference_room.jpg', "rb") as d:
         data = d.read()
         encoded = base64.b64encode(data)
     conf_room = "data:image/png;base64," + encoded.decode("utf-8")
 
-    with open(r'pictures\finaud.jpg', "rb") as e:
+    with open(r'pictures/finaud.jpg', "rb") as e:
         data = e.read()
         encoded = base64.b64encode(data)
     finaud = "data:image/png;base64," + encoded.decode("utf-8")
 
-    with open(r'pictures\hisflex.jpg', "rb") as f:
+    with open(r'pictures/hisflex.jpg', "rb") as f:
         data = f.read()
         encoded = base64.b64encode(data)
     hisflex = "data:image/png;base64," + encoded.decode("utf-8")
