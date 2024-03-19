@@ -87,8 +87,7 @@ elif selected_tab == "Request & Reservations":
 
 elif selected_tab == "Letter Templates":
     st.header('📝 Letter Templates')
-    
-    from streamlit_card import card
+  
     col1, col2, col3 = st.columns((1,1,1))
     import base64
     with open('pictures/martin_hall.jpg', "rb") as a:
