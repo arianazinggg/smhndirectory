@@ -103,8 +103,9 @@ elif selected_tab == "Letter Templates":
     htmlstr = f"""<p style='background-image: url(data:image/png;base64,{encoded_image});
                             background-size: contain;
                             background-position: center;
+                            opacity:0.25;
                             width: 300px; 
-                            height: 200px; 
+                            height: 600px; 
                             color: white;
                             text-align:center;
                             font-size: 50px; 
