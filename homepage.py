@@ -86,7 +86,7 @@ elif selected_tab == "Request & Reservations":
 
 elif selected_tab == "Letter Templates":
     st.header('📝 Letter Templates')
-    col1,col2,col3 =st.columns((1,1,1))
+    col1,col2,col3 =st.columns((2,2,2))
     
     wch_colour_box = (0,204,102)
     wch_colour_font = (0,0,0)
@@ -94,33 +94,176 @@ elif selected_tab == "Letter Templates":
     valign = "left"
     iconname = "fas fa-asterisk"
     lnk = '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">'
-    i = 'Martin Hall'
+    
     width = "300px"
     height = "200px"
-    with open(r'pictures/martin_hall.jpg', "rb") as f:
-        data = f.read()
-    encoded_image = base64.b64encode(data).decode()
-    htmlstr = f"""<p style='background-image: url(data:image/png;base64,{encoded_image});
-                            background-size: contain;
-                            background-position: center;
-                            opacity:0.25;
-                            width: 300px; 
-                            height: 600px; 
-                            color: white;
-                            text-align:center;
-                            font-size: 50px; 
-                            border-radius: 7px; 
-                            padding-left: 8px; 
-                            padding-top: 80px; 
-                            padding-bottom: 18px; 
-                            line-height:25px;
-                            position:relative;
-                            z-index:1;'>
-                            <i class='fa-xs'></i> {i}
-                            </style><BR><span style='font-size: 20px; 
-                            margin-top: 0;'></style></span></p>"""
+    opacity =0.75
+    font_size = "50px"
+    space_size_1='20px'
+    space_size="50px"
 
-    st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+
+    with col1:
+        with open(r'pictures/martin_hall.jpg', "rb") as f:
+            martin_hall = f.read()
+        martin_hall_decode = base64.b64encode(martin_hall).decode()
+        text1 = 'Martin Hall'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{martin_hall_decode});
+                                background-size: contain;
+                                background-position: center;
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                opacity:{opacity};
+                                text-align:center;
+                                font-size: {font_size}; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:25px;
+                                position:relative;
+                                z-index:1
+                                margin-top:{space_size_1};'>
+                                <i class='fa-xs'></i> {text1}
+                                </style><BR><span style='font-size: 20px; '></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+        
+        with open(r'pictures/arrupe.jpg', "rb") as f:
+            arrupe_hall = f.read()
+        arrupe_hall_decode = base64.b64encode(arrupe_hall).decode()
+        text2 = 'Arrupe Hall'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{arrupe_hall_decode});
+                                background-size: contain;
+                                background-position: center;
+                                opacity:{opacity};
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                text-align:center;
+                                font-size: 50px; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:25px;
+                                position:relative;
+                                z-index:1;
+                                margin-top:{space_size}'>
+                                <i class='fa-xs'></i> {text2}
+                                </style><span style='font-size: 20px; '></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+
+    with col2: 
+        with open(r'pictures/bapa_benny.jpg', "rb") as f:
+            bapa = f.read()
+        bapa_benny = base64.b64encode(bapa).decode()
+        text3='Bapa Benny Tudtud Auditorium'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{bapa_benny});
+                                background-size: contain;
+                                background-position: center;
+                                opacity: {opacity};
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                text-align:center;
+                                font-size: 50px; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:25px;
+                                position:relative;
+                                z-index:1;'>
+                                <i class='fa-xs'></i> {text3}
+                                </style><BR><span style='font-size: 20px; 
+                                margin-top: 0;'></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+
+        with open(r'pictures/conference_room.jpg', "rb") as f:
+            conference = f.read()
+        conference_room = base64.b64encode(conference).decode()
+        text4='Conference Room'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{conference_room});
+                                background-size: contain;
+                                background-position: center;
+                                opacity:{opacity};
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                text-align:center;
+                                font-size: 50px; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:25px;
+                                position:relative;
+                                margin-top:{space_size};
+                                z-index:1;'>
+                                <i class='fa-xs'></i> {text4}
+                                </style><BR><span style='font-size: 20px; 
+                                margin-top: 0;'></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+    
+    with col3: 
+        with open(r'pictures/finaud.jpg', "rb") as f:
+            finaud= f.read()
+        finaud_room = base64.b64encode(finaud).decode()
+        text5='Finster Auditorium'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{conference_room});
+                                background-size: contain;
+                                background-position: center;
+                                opacity:{opacity};
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                text-align:center;
+                                font-size: 50px; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:25px;
+                                position:relative;
+                                z-index:1;'>
+                                <i class='fa-xs'></i> {text5}
+                                </style><BR><span style='font-size: 20px; 
+                                margin-top: 0;'></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+
+        with open(r'pictures/hisflex.jpg', "rb") as f:
+            hisflex= f.read()
+        hisflex_room = base64.b64encode(hisflex).decode()
+        text6='Hisflex Classrooms'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{hisflex_room});
+                                background-size: contain;
+                                background-position: center;
+                                opacity:{opacity};
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                text-align:center;
+                                font-size: 50px; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:25px;
+                                position:relative;
+                                margin-top:{space_size};
+                                z-index:1;'>
+                                <i class='fa-xs'></i> {text6}
+                                </style><BR><span style='font-size: 20px; 
+                                margin-top: 0;'></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+    
     
 
 elif selected_tab == "School Administration":
