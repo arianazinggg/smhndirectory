@@ -1,11 +1,8 @@
 import streamlit as st
 import pandas as pd
-<<<<<<< HEAD
 import streamlit_card
-=======
 from streamlit_card import card
 
->>>>>>> 0c438688b91b5271f49c9733df631773cceede19
 
 st.set_page_config(page_title="SAMAHAN Directory", 
                     page_icon=":book:",
