@@ -97,9 +97,9 @@ elif selected_tab == "Letter Templates":
     i = 'Martin Hall'
     width = "300px"
     height = "200px"
-    background_image_url="pictures\martin_hall.jpg"
-    image_file_read = background_image_url.read()
-    encoded_image = base64.b64encode(image_file_read).decode()
+    with open(r'pictures/martin_hall.jpg', "rb") as f:
+        data = f.read()
+    encoded_image = base64.b64encode(data).decode()
     htmlstr = f"""<p style='background-image: url(data:image/png;base64,{encoded_image});
                             background-size: contain;
                             background-position: center;
