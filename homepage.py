@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-import streamlit_card
-from streamlit_card import card
+
 
 
 st.set_page_config(page_title="SAMAHAN Directory", 
@@ -172,13 +171,14 @@ elif selected_tab == "Letter Templates":
         styles={
             'card':{"width":"105%"}},
         url="https://samahan.addu.edu.ph/")
+
+        
    
     wch_colour_box = (0,204,102)
     wch_colour_font = (0,0,0)
-    fontsize = 18
+    fontsize = 50
     valign = "left"
     iconname = "fas fa-asterisk"
-    sline = "Observations"
     lnk = '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">'
     i = 'Martin Hall'
     width = "300px"
@@ -190,20 +190,19 @@ elif selected_tab == "Letter Templates":
                             background-position: center;
                             width: 300px; 
                             height: 200px; 
-                            color: rgb({wch_colour_font[0]}, 
-                                    {wch_colour_font[1]}, 
-                                    {wch_colour_font[2]}, 0.75); 
-                            font-size: 20px; 
+                            color: white;
+                            text-align:center;
+                            font-size: 50px; 
                             border-radius: 7px; 
                             padding-left: 8px; 
-                            padding-top: 18px; 
+                            padding-top: 80px; 
                             padding-bottom: 18px; 
                             line-height:25px;
                             position:relative;
                             z-index:1;'>
-                            <i class='{iconname} fa-xs'></i> {i}
-                            </style><BR><span style='font-size: 14px; 
-                            margin-top: 0;'>{sline}</style></span></p>"""
+                            <i class='fa-xs'></i> {i}
+                            </style><BR><span style='font-size: 20px; 
+                            margin-top: 0;'></style></span></p>"""
 
     st.markdown(lnk + htmlstr, unsafe_allow_html=True)
     
