@@ -88,6 +88,7 @@ elif selected_tab == "Request & Reservations":
 elif selected_tab == "Letter Templates":
     st.header('📝 Letter Templates')
   
+    import base64
    
     wch_colour_box = (0,204,102)
     wch_colour_font = (0,0,0)
