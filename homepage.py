@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import streamlit_card
-from streamlit_card import card
 import base64
 
 st.set_page_config(page_title="SAMAHAN Directory", 
@@ -89,87 +87,6 @@ elif selected_tab == "Request & Reservations":
 elif selected_tab == "Letter Templates":
     st.header('📝 Letter Templates')
     col1,col2,col3 =st.columns((1,1,1))
-
-    with open('pictures/martin_hall.jpg', "rb") as a:
-        data = a.read()
-        encoded = base64.b64encode(data)
-    martin = "data:image/png;base64," + encoded.decode("utf-8")
-    
-    with open(r'pictures/tudtud.jpg', "rb") as b:
-        tudtud_read = base64.b64encode(b.read())
-    tudtud = "data:image/png;base64," + tudtud_read.decode("utf-8")
-    
-    with open(r'pictures/arrupe.jpg', "rb") as c:
-        data = c.read()
-        encoded = base64.b64encode(data)
-    arrupe = "data:image/png;base64," + encoded.decode("utf-8")
-
-    with open(r'pictures/conference_room.jpg', "rb") as d:
-        data = d.read()
-        encoded = base64.b64encode(data)
-    conf_room = "data:image/png;base64," + encoded.decode("utf-8")
-
-    with open(r'pictures/finaud.jpg', "rb") as e:
-        data = e.read()
-        encoded = base64.b64encode(data)
-    finaud = "data:image/png;base64," + encoded.decode("utf-8")
-
-    with open(r'pictures/hisflex.jpg', "rb") as f:
-        data = f.read()
-        encoded = base64.b64encode(data)
-    hisflex = "data:image/png;base64," + encoded.decode("utf-8")
-   
-   
-    with col1:
-        card(title="Martin Hall",
-        text="4th Flr, Martin Hall",
-        image=martin,
-        styles={
-            'card':{
-                "width":"105%"}},
-        url="https://samahan.addu.edu.ph/")
-        
-    
-        card(title="Bapa Benny Tudtud Auditorium",
-        text="Ateneo de Davao - Jacinto",
-        image=tudtud,
-        styles={
-            'card':{
-                "width":"105%"}},
-        url="https://samahan.addu.edu.ph/")
-
-    with col2: 
-        card(title="Arrupe Hall",
-        text="1st Flr, Martin Hall",
-        image=arrupe,
-        styles={
-            'card':{
-                "width":"105%"}},
-        url="https://github.com/gamcoh/st-cardhttps://samahan.addu.edu.ph/")
-
-        card(title="Hisflex Classrooms",
-        text="Ateneo de Davao - Jacinto",
-        image=hisflex,
-        styles={
-            'card':{
-                "width":"105%"}},
-        url="https://samahan.addu.edu.ph/")
-    
-    with col3: 
-        card(title="CCFC Conference Rooms",
-        text="3rd Flr, Ricci Hall",
-        image=conf_room,
-        styles={
-            'card':{
-                "width":"105%"}},
-        url="https://samahan.addu.edu.ph/")
-
-        card(title="Finster Auditorium",
-        text="7th Flr, Finster Building",
-        image=finaud,
-        styles={
-            'card':{"width":"105%"}},
-        url="https://samahan.addu.edu.ph/")
     
     wch_colour_box = (0,204,102)
     wch_colour_font = (0,0,0)
@@ -181,8 +98,9 @@ elif selected_tab == "Letter Templates":
     width = "300px"
     height = "200px"
     background_image_url="pictures\martin_hall.jpg"
-
-    htmlstr = f"""<p style='background-image: url(data:image/png;base64,{base64.b64encode(open(background_image_url, "rb").read()).decode()});
+    image_file_read = background_image_url.read()
+    encoded_image = base64.b64encode(image_file_read).decode()
+    htmlstr = f"""<p style='background-image: url(data:image/png;base64,{encoded_image});
                             background-size: contain;
                             background-position: center;
                             width: 300px; 
