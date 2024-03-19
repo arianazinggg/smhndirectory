@@ -95,10 +95,13 @@ elif selected_tab == "Letter Templates":
     
     width = "350px"
     height = "250px"
-    opacity =0.75
+    opacity =0.85
     font_size = "50px"
     margin_top='20px'
     margin_top_2nd="50px"
+    text_shadow = '2px 2px px rgba(0, 0, 0, 1)'
+    font_weight ='bold' 
+    background_color='rgba(33, 45, 148, 0.5)'
 
   
 
@@ -111,6 +114,7 @@ elif selected_tab == "Letter Templates":
         htmlstr = f"""<p style='background-image: url(data:image/png;base64,{martin_hall_decode});
                                 background-size: 100% 100%;
                                 background-position: center;
+                                background-color:{background_color};
                                 margin-top: {margin_top};
                                 width: {width}; 
                                 height: {height}; 
@@ -118,12 +122,15 @@ elif selected_tab == "Letter Templates":
                                 opacity:{opacity};
                                 text-align:center;
                                 font-size: {font_size}; 
+                                text-shadow: {text_shadow};
                                 border-radius: 7px; 
                                 padding-left: 8px; 
                                 padding-top: 95px; 
                                 padding-bottom: 18px; 
                                 line-height:25px;
                                 position:relative;
+                                box-shadow: 5 0 4px rgba(0.5, 0.5, 0, 1);
+                                transform: translateZ(-1px);
                                 z-index:1
                                 margin-top:{margin_top};'>
                                 <i class='fa-xs'style='z-index:2'></i> {text1} 
@@ -138,11 +145,13 @@ elif selected_tab == "Letter Templates":
         htmlstr = f"""<p style='background-image: url(data:image/png;base64,{arrupe_hall_decode});
                                 background-size: 100% 100%;
                                 background-position: center;
+                                background-color:{background_color};
                                 opacity:{opacity};
                                 width: {width}; 
                                 height: {height}; 
                                 color: white;
                                 text-align:center;
+                                text-shadow:{text_shadow};
                                 font-size: 50px; 
                                 border-radius: 7px; 
                                 padding-left: 8px; 
@@ -165,11 +174,13 @@ elif selected_tab == "Letter Templates":
         htmlstr = f"""<p style='background-image: url(data:image/png;base64,{bapa_benny});
                                 background-size: 100% 100%;
                                 background-position: center;
+                                background-color:{background_color};
                                 opacity: {opacity};
                                 width: {width}; 
                                 height: {height}; 
                                 color: white;
                                 text-align:center;
+                                text-shadow: {text_shadow};
                                 font-size: 45px; 
                                 border-radius: 7px; 
                                 padding-left: 8px; 
@@ -184,6 +195,71 @@ elif selected_tab == "Letter Templates":
 
         st.markdown(lnk + htmlstr, unsafe_allow_html=True)
 
+        with open(r'pictures/finaud.jpg', "rb") as f:
+            finaud = f.read()
+        finaud_room = base64.b64encode(finaud).decode()
+        text5='Finster Auditorium'
+        
+        htmlstr = f"""<div style="position:relative;">
+                <p style='background-image: url(data:image/png;base64,{finaud_room});
+                            background-size: 100% 100%;
+                            background-color:{background_color};
+                            background-position: center;
+                            opacity:{opacity};
+                            width: {width}; 
+                            height: {height}; 
+                            color: white;
+                            text-align:center;
+                            text-shadow: {text_shadow};
+                            font-size: 50px; 
+                            border-radius: 7px; 
+                            padding-left: 8px; 
+                            padding-top: 75px; 
+                            padding-bottom: 18px; 
+                            line-height: 45px;
+                            position:relative;
+                            margin-top:{margin_top_2nd};
+                            z-index:1; 
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to the text */
+                            '>
+                            <i class='fa-xs'  style='z-index:2'></i> {text5}
+                            </style><span style='font-size: 20px; 
+                            margin-top: 0;'></style></span></p>
+              </div>"""
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+
+        
+    
+    with col3: 
+        with open(r'pictures/hisflex.jpg', "rb") as f:
+            hisflex= f.read()
+        hisflex_room = base64.b64encode(hisflex).decode()
+        text6='Hisflex Classroom'
+        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{hisflex_room});
+                                background-size: 100% 100%;
+                                background-position: center;
+                                background-color:{background_color};
+                                opacity:{opacity};
+                                width: {width}; 
+                                height: {height}; 
+                                color: white;
+                                text-align:center;
+                                text-shadow: {text_shadow};
+                                font-size: 50px; 
+                                border-radius: 7px; 
+                                padding-left: 8px; 
+                                padding-top: 80px; 
+                                padding-bottom: 18px; 
+                                line-height:35px;
+                                position:relative;
+                                margin-top:{margin_top};
+                                z-index:1;'>
+                                <i class='fa-xs'style='z-index:2'></i> {text6}
+                                </style><BR><span style='font-size: 20px; '></style></span></p>"""
+
+        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+        
+        
         with open(r'pictures/conference_room.jpg', "rb") as f:
             conference = f.read()
         conference_room = base64.b64encode(conference).decode()
@@ -191,6 +267,7 @@ elif selected_tab == "Letter Templates":
         htmlstr = f"""<p style='background-image: url(data:image/png;base64,{conference_room});
                                 background-size: 100% 100%;
                                 background-position: center;
+                                background-color:{background_color};
                                 opacity:{opacity};
                                 width: {width}; 
                                 height: {height}; 
@@ -209,59 +286,9 @@ elif selected_tab == "Letter Templates":
                                 </style><span style='font-size: 20px;'></style></span></p>"""
 
         st.markdown(lnk + htmlstr, unsafe_allow_html=True)
-    
-    with col3: 
-        with open(r'pictures/finaud.jpg', "rb") as f:
-            finaud = f.read()
-        finaud_room = base64.b64encode(finaud).decode()
-        text5='Finster Auditorium'
-        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{finaud_room});
-                                background-size: 100% 100%;
-                                background-position: center;
-                                opacity:{opacity};
-                                width: {width}; 
-                                height: {height}; 
-                                color: white;
-                                text-align:center;
-                                font-size: 50px; 
-                                border-radius: 7px; 
-                                padding-left: 8px; 
-                                padding-top: 80px; 
-                                padding-bottom: 18px; 
-                                line-height: 45px;
-                                position:relative;
-                                margin-top:{margin_top};
-                                z-index:1;'>
-                                <i class='fa-xs' style='z-index:2'></i> {text5}
-                                </style><span style='font-size: 20px; ></style></span></p>"""
 
-        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
 
-        with open(r'pictures/hisflex.jpg', "rb") as f:
-            hisflex= f.read()
-        hisflex_room = base64.b64encode(hisflex).decode()
-        text6='Hisflex Classroom'
-        htmlstr = f"""<p style='background-image: url(data:image/png;base64,{hisflex_room});
-                                background-size: 100% 100%;
-                                background-position: center;
-                                opacity:{opacity};
-                                width: {width}; 
-                                height: {height}; 
-                                color: white;
-                                text-align:center;
-                                font-size: 50px; 
-                                border-radius: 7px; 
-                                padding-left: 8px; 
-                                padding-top: 80px; 
-                                padding-bottom: 18px; 
-                                line-height:35px;
-                                position:relative;
-                                margin-top:{margin_top_2nd};
-                                z-index:1;'>
-                                <i class='fa-xs'style='z-index:2'></i> {text6}
-                                </style><BR><span style='font-size: 20px; '></style></span></p>"""
-
-        st.markdown(lnk + htmlstr, unsafe_allow_html=True)
+        
     
     
 
