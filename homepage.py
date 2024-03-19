@@ -97,12 +97,12 @@ elif selected_tab == "Letter Templates":
     height = "250px"
     opacity =0.85
     font_size = "50px"
-    margin_top='20px'
+    margin_top='30px'
     margin_top_2nd="50px"
     text_shadow = '2px 2px px rgba(0, 0, 0, 1)'
     font_weight ='bold' 
     background_color='rgba(33, 45, 148, 0.5)'
-
+    box_shadow="0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.2)"
   
 
 
@@ -132,7 +132,8 @@ elif selected_tab == "Letter Templates":
                                 box-shadow: 5 0 4px rgba(0.5, 0.5, 0, 1);
                                 transform: translateZ(-1px);
                                 z-index:1
-                                margin-top:{margin_top};'>
+                                margin-top:{margin_top};
+                                box-shadow: {box_shadow}'>
                                 <i class='fa-xs'style='z-index:2'></i> {text1} 
                                 </style><BR><span style='font-family: Arial; font-size: 20px; '></style></span></p>"""
 
@@ -160,7 +161,8 @@ elif selected_tab == "Letter Templates":
                                 line-height:25px;
                                 position:relative;
                                 z-index:1;
-                                margin-top:{margin_top_2nd}'>
+                                margin-top:{margin_top_2nd};
+                                box-shadow: {box_shadow}'>
                                 <i class='fa-xs' style='z-index:2'></i> {text2}
                                 </style><span style='font-size: 20px;'></style></span></p>"""
 
@@ -189,7 +191,8 @@ elif selected_tab == "Letter Templates":
                                 line-height:50px;
                                 position:relative;
                                 margin-top: {margin_top};
-                                z-index:1;'>
+                                z-index:1;
+                                box-shadow: {box_shadow}'>
                                 <i class='fa-xs' style='z-index:2'></i> {text3}
                                 </style><BR><span style='font-size: 18px;'></style></span></p>"""
 
@@ -220,8 +223,7 @@ elif selected_tab == "Letter Templates":
                             position:relative;
                             margin-top:{margin_top_2nd};
                             z-index:1; 
-                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to the text */
-                            '>
+                            box-shadow: {box_shadow}'>
                             <i class='fa-xs'  style='z-index:2'></i> {text5}
                             </style><span style='font-size: 20px; 
                             margin-top: 0;'></style></span></p>
@@ -253,7 +255,8 @@ elif selected_tab == "Letter Templates":
                                 line-height:35px;
                                 position:relative;
                                 margin-top:{margin_top};
-                                z-index:1;'>
+                                z-index:1;
+                                box-shadow: {box_shadow}'>
                                 <i class='fa-xs'style='z-index:2'></i> {text6}
                                 </style><BR><span style='font-size: 20px; '></style></span></p>"""
 
@@ -281,7 +284,8 @@ elif selected_tab == "Letter Templates":
                                 line-height: 45px;
                                 position:relative;
                                 margin-top:{margin_top_2nd};
-                                z-index:1;'>
+                                z-index:1;
+                                box-shadow: {box_shadow}'>
                                 <i class='fa-xs' style='z-index:2'></i> {text4}
                                 </style><span style='font-size: 20px;'></style></span></p>"""
 
