@@ -83,19 +83,21 @@ elif selected_tab == "Request & Reservations":
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>LED/iCOMMP Studio</i></div>', unsafe_allow_html=True)
     markdown_link = "[iCOMMP Reservation Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfZECyMcQ7dCiQUr8dosFKrdfuoExv_9AxDNQzMZ8oWzimhHQ/viewform?pli=1&fbclid=IwAR36HS_AGBeC9S0rbdqMHPqMjmcMO2NX3NhzXWW5jyvUlJoK8EZTmIfOezU)"
     st.markdown(f"Fill up the {markdown_link}", unsafe_allow_html=True)
-    st.write("Equipments:")
-    st.write("- ICOMMP Studio 1 (Big Room)")
-    st.write("- ICOMMP Studio 2 (Small Room)")
-    st.write("- LED Wall 1 (Big) (Only at Martin Hall 4th floor)")
-    st.write("- LED Wall 2 (Small)")
-    st.write("- LED Wall 3 (Small)")
-    st.write("- BIG TV 1")
-    st.write("- BIG TV 2")
-    st.write("- Tech Help or Zoom / Live Stream / Camera Setup 1 & Other Equipment")
-    st.write("- Tech Help or Zoom / Live Stream / Camera Setup 2 & Other Equipment")
-    st.write("- Sound System (Martin Hall 4th flr.)")
-    st.write("- Sound System (3rd floor Community Center)")
-    st.write("- Sound System (11th floor Community Center)")
+    st.markdown("""
+    Equipments:
+    - ICOMMP Studio 1 (Big Room)
+    - ICOMMP Studio 2 (Small Room)
+    - LED Wall 1 (Big) (Only at Martin Hall 4th floor)
+    - LED Wall 2 (Small)
+    - LED Wall 3 (Small)
+    - BIG TV 1
+    - BIG TV 2
+    - Tech Help or Zoom / Live Stream / Camera Setup 1 & Other Equipment
+    - Tech Help or Zoom / Live Stream / Camera Setup 2 & Other Equipment
+    - Sound System (Martin Hall 4th flr.)
+    - Sound System (3rd floor Community Center)
+    - Sound System (11th floor Community Center)
+    """)
 
     st.write("<i>Note: If you are planning to reserve the LED Wall, fill up the form depend on the days you will be needing it.</i>", unsafe_allow_html=True)
 
