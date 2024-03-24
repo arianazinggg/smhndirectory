@@ -81,7 +81,7 @@ elif selected_tab == "Request & Reservations":
     st.write("<i>Note: You may simultaneously process your request for equipment with your venue reservation to save time. Make sure to indicate all the equipment needed for your event (e.g. sound system, microphone, tables, chairs, platforms, etc.) For events with tables and chairs, don’t forget to attach a detailed floor plan of the venue in your letter. Be aware that such requests may necessitate a Job Order and may incur overtime fees (for university staff who work outside of normal hours), so remember to settle your payment with Finance afterward.</i>", unsafe_allow_html=True)
 
     st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>LED/iCOMMP Studio</i></div>', unsafe_allow_html=True)
-    markdown_link = "[Concept Paper Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdpCHygaKo64U6MUpV9kO6wCdWpWnuw29TZOPLwxcg5pVpAGA/viewform)"
+    markdown_link = "[iCOMMP Reservation Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfZECyMcQ7dCiQUr8dosFKrdfuoExv_9AxDNQzMZ8oWzimhHQ/viewform?pli=1&fbclid=IwAR36HS_AGBeC9S0rbdqMHPqMjmcMO2NX3NhzXWW5jyvUlJoK8EZTmIfOezU)"
     st.markdown(f"<i>Fill up the {markdown_link}</i>", unsafe_allow_html=True)
 
 elif selected_tab == "Letter Templates":
