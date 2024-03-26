@@ -98,8 +98,16 @@ elif selected_tab == "Request & Reservations":
     - Sound System (3rd floor Community Center)
     - Sound System (11th floor Community Center)
     """)
-
+    st.markdown("")
     st.write("<i>Note: If you are planning to reserve the LED Wall, fill up the form depend on the days you will be needing it.</i>", unsafe_allow_html=True)
+
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: black; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Physical Plant Office</i></div>', unsafe_allow_html=True)
+    st.markdown("""
+    - Tables
+    - Chairs
+    - Stilts
+    - Extension Wires
+            """)
 
 
 elif selected_tab == "Letter Templates":
