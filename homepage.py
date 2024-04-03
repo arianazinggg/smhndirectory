@@ -112,7 +112,7 @@ elif selected_tab == "Request & Reservations":
 
 
 elif selected_tab == "Letter Templates":
-    st.header('📝 Letter Templates')
+    st.header('📝 Templates')
     col1,col2,col3 =st.columns((2,2,2))
     
     wch_colour_box = (0,204,102)
