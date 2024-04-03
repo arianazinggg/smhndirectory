@@ -410,6 +410,6 @@ elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
     # Add your content for Ateneo Map here
 
-    image_path = r"C:\Users\arian\Documents\SMHN Directory\smhndirectory\pictures\AdDU Jacinto Map.jpg"
+    image_path = r"pictures\AdDU Jacinto Map.jpg"
     image = open(image_path, "rb").read()
     st.image(image, caption='AdDU Jacinto Campus Map', use_column_width=True)
