@@ -373,12 +373,12 @@ elif selected_tab == "School Administration":
     st.markdown("**:blue[Ms. Nelly Z. Limbadan, Ph.D.]** <br> <i>Assistant Dean, Social Sciences — SAS</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Benedict V. Omblero, Ph.D.]** <br> <i>Director, Ateneo Language Center</i>", unsafe_allow_html=True)
     
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Computer Studies</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: #1B3C73; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Computer Studies</i></div>', unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Antonio G. Bulao II]** <br> <i>Chairperson, Computer Science Department <br> Coordinator, BS Data Science Program</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Adrian Ablazo]** <br> <i>Chairperson, Information Technology Department <br> and Information Systems Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Patrick Angelo Paasa]** <br> <i>Director, Ateneo de Davao Research in Information Systems and Software <br> Engineering (ARISEn) Laboratory</i>", unsafe_allow_html=True)
     
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Humanities and Letters</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: #1B3C73; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Humanities and Letters</i></div>', unsafe_allow_html=True)
     st.markdown("**:blue[Ms. Stella Marie G. Arcenas, Ph.D.]** <br> <i> Chairperson, Languages, Literature, and Arts Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Joseph A. Laroscain, Ph.D.]** <br> <i>Chairperson, Mass Communication Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Ms. Vida Mia S. Valverde, Ph.D.]** <br> <i>Chair, Philosophy Department</i>", unsafe_allow_html=True)
@@ -386,14 +386,14 @@ elif selected_tab == "School Administration":
     st.markdown("**:blue[Ms. Maricar Gay V. Panda, Ph.D.]** <br> <i>Director, Confucius Institute</i>", unsafe_allow_html=True)
     
 
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Natural Sciences and Mathematics</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: #1B3C73; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Natural Sciences and Mathematics</i></div>', unsafe_allow_html=True)
     st.markdown("**:blue[Dr. Anna Liza V. Llamera]** <br> <i> Chairperson, Biology Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Joval C. Afalla, Ph.D.]** <br> <i>Chairperson, Chemistry Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Ms. Doris B. Montecastro, Ph.D.]** <br> <i>Chairperson, Environmental Science Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Joseph E. Belida]** <br> <i>Chairperson, Mathematics Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Raymund S. Vizcarra, Ph. D.]** <br> <i>Chair, Physics Department</i>", unsafe_allow_html=True)
     
-    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: white; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Social Sciences</i></div>', unsafe_allow_html=True)
+    st.markdown('<div style="display: inline-block; padding: 10px; border-radius: 10px; text-align: center; font-family: Helvetica; font-size: 14px; color: #1B3C73; background-color: #FFEDD8; margin-top: 8px; margin-bottom: 8px;"><i>Social Sciences</i></div>', unsafe_allow_html=True)
     st.markdown("**:blue[Ms. Rosalinda C. Tomas]** <br> <i> Chairperson, Anthropology Department</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Atty. Augusto Jose Emmanuel B. Gatmaytan, Ph.D.]** <br> <i>Director, Ateneo Institute of Anthropology</i>", unsafe_allow_html=True)
     st.markdown("**:blue[Mr. Christian C. Pasion]** <br> <i>Chairperson, Economics Department</i>", unsafe_allow_html=True)
