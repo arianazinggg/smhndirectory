@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 import base64
 
-st.set_page_config(page_title="SAMAHAN Guidesite", 
+st.set_page_config(page_title="SAMAHAN Guide Site", 
                     page_icon=":book:",
                     layout="wide",
                     initial_sidebar_state="expanded",
 )
 
-st.title("SAMAHAN Directory")
+st.title("Guide Site")
 
 pdf = open("SMHN GUIDEBOOK FOR STUDENT ACTIVITIES.pdf", "rb").read()
 st.download_button(
