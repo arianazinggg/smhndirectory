@@ -409,3 +409,6 @@ elif selected_tab == "School Administration":
 elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
     # Add your content for Ateneo Map here
+
+    image = open("C:\Users\arian\Documents\SMHN Directory\smhndirectory\pictures\AdDU Jacinto Map.jpg", "rb").read()
+    st.image(image, caption='AdDU Jacinto Campus Map', use_column_width=True)
