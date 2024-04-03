@@ -411,5 +411,4 @@ elif selected_tab == "Ateneo Map":
     # Add your content for Ateneo Map here
 
     image_path = r"pictures\AdDU Jacinto Map.jpg"
-    image = open(image_path, "rb").read()
     st.image(image, caption='AdDU Jacinto Campus Map', use_column_width=True)
