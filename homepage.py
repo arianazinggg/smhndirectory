@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import base64
+from PIL import Image
 
 st.set_page_config(page_title="SAMAHAN Guide Site", 
                     page_icon=":book:",
@@ -410,5 +411,10 @@ elif selected_tab == "Ateneo Map":
     st.header('🗺️ Ateneo Map')
     # Add your content for Ateneo Map here
 
-    image_path = r"pictures\AdDU Jacinto Map.jpg"
+    image_path = "pictures/AdDU Jacinto Map.jpg"
+
+    # Open the image file
+    image = Image.open(image_path)
+
+    # Display the image
     st.image(image, caption='AdDU Jacinto Campus Map', use_column_width=True)
