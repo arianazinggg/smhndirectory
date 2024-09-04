@@ -4,7 +4,7 @@ import base64
 from PIL import Image
 
 st.set_page_config(page_title="SAMAHAN Guide Site", 
-                    page_icon=":book:",
+                    page_icon=":flower:",
                     layout="wide",
                     initial_sidebar_state="expanded",
 )
